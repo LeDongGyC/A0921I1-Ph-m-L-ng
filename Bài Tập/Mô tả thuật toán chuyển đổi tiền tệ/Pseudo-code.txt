@@ -1,0 +1,6 @@
+Begin
+  Input A số tiền Đô la Mỹ
+        B số tiền Việt
+  B=A*23000
+  Display B
+End    
