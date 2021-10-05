@@ -1,0 +1,6 @@
+Begin
+  Input N số và dãy a1,...an
+  Max:=a1, i:=1
+  for i:=2 to N do if Max< ai then max:=ai
+  Display Max
+End

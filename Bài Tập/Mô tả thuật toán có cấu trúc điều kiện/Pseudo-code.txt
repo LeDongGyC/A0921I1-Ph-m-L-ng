@@ -1,0 +1,22 @@
+Begin
+ Input Điểm
+  If Điểm>=75 
+  Print loại A
+   Else
+    If 60<=Điểm<75
+    Print loại B
+     Else
+      If 45<=Điểm<60
+      Print loại C
+       Else
+        If 35<=Điểm<45
+        Print loại D
+         Else 
+          If Điểm<35
+          Print loại E
+         End If
+       End If
+     End If
+   End If
+  End If
+End

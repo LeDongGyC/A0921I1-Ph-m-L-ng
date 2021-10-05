@@ -1,0 +1,4 @@
+Begin
+  input 3 số a,b,c
+  max:=a
+  If max<b then max:=
