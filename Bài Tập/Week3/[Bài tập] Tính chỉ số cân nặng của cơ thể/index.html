@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Chỉ số cân nặng</h2>
+    <input type="text" id="weight" placeholder="nhap vao chi so can nang(kg)" style="width: 200px ;">
+    <input type="text" id="height" placeholder="nhap vao chi so chieu cao(met)" style="width: 200px"> <br>
+    <input type="button" onclick="next()" value="continue">
+    <p id="result"></p>
+    <script>
+         function next(){
+             weight = parseFloat(document.getElementById("weight").value);
+             height = parseFloat(document.getElementById("height").value);
+             bmi = weight / height*height
+             if( bmi < 18){
+                 document.getElementById("result").innerText = 'Underweight'
+                } else if(bmi < 25){
+                 document.getElementById("result").innerText = 'Underweight'
+                } else if (bmi < 30) {
+                 document.getElementById('result').innerText = 'OverWeight';
+                } else {
+                 document.getElementById('result').innerText = 'Obese';
+                      }
+                    }
+   </script>
+</body>
+</html>

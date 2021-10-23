@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let luong = parseInt(prompt("Nhập số tiền lương:"));
+        let thue;
+        if (luong > 384000000) {
+            thue = luong * (25 / 100);
+        } else if (luong >= 217000000) {
+            thue = luong * (15 / 100);
+        } else if (luong >= 121000000) {
+            thue = luong * (10 / 100);
+        } else if (luong >= 61000000) {
+            thue = luong * (7 / 100);
+        } else {
+            thue = luong * (5 / 100);
+        }
+        document.write("Số tiền thuế phải trả là: " + thue + " VND");
+    </script>
+</body>
+</html>
