@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="num" placeholder="Nhập số nguyên lớn hơn 2">
+    <input type="button" value="submit" onclick="check()">
+    <p id="result"></p>
+    <script>
+        function check(){
+            let num = parseInt(document.getElementById("num").value)
+            let result = ""
+            let count = 0
+            let m = 2
+            while(1){
+                let mark =1
+                for(i =2; i<= Math.sqrt(m);i++){
+                   if(m%i == 0){
+                       mark = 0
+                       break;
+                    }
+                }
+                if(mark ==1){
+                      count ++
+                      document.write(m + ",")  
+                      
+                              }
+                if(count>=num){
+                    break;
+                }
+            m++
+        }
+    }
+    
+    
+    
+
+    </script>
+
+</body>
+</html>
