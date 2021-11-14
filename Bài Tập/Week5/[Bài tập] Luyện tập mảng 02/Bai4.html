@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bài 4</title>
+  </head>
+  <body>
+    <script>
+      string = "Pham Le Dong";
+      let arr = string.split("");
+      let count = 1;
+      for (var i = 0; i < arr.length; i++) {
+        if (arr[i] === " " && arr[i + 1] !== " ") {
+          count++;
+        }
+      }
+      document.write("Số từ trong chuỗi là: " + count);
+    </script>
+  </body>
+</html>

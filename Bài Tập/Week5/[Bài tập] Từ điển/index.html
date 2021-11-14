@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="eng" placeholder="English" oninput="trans()" />;
+    <input type="text" id="viet" placeholder="Vietnam" />;
+    <script>
+      let English = ["one", "two", "three", "four", "five"];
+      let Vietnam = ["mot", "hai", "ba", "bon", "nam"];
+      function trans(){
+        let eng = document.getElementById("eng").value;
+        if (english.indexOf(eng) !== -1){
+            document.getElementById("viet").value = Vietnamese[English.indexOf(eng)];
+        }else {
+            document.getElementById("viet").value ="";
+        }
+    }
+    </script>
+  </body>
+</html>
